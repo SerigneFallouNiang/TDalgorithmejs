@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo7</title>
+</head>
+<body>
+    <script>
+        let billet20=0
+        let billet10=0
+        let billet5=0
+        let billet2=0
+        let billet1=0
+
+        
+        let n=parseInt(prompt('Entrez le montant que vous voulez décomposé'))
+        billet20=Math.trunc(n/20)
+        n=n%20
+        billet10=Math.trunc(n/10)
+        n=n%10
+        billet5=Math.trunc(n/5)
+        n=n%5
+        billet2=Math.trunc(n/2)
+        n=n%2
+        
+        billet1=n
+        console.log('le nompbre de bien 20 est de:',billet20,'EURO')
+        console.log('le nompbre de bien 10 est de:',billet10,'EURO')
+        console.log('le nompbre de bien 5 est de:',billet5,'EURO')
+        console.log('le nompbre de bien 2 est de:',billet2,'EURO')
+        console.log('le nompbre de bien 1 est de:',billet1,'EURO')
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exo3</title>
+</head>
+<body>
+    <script>
+       /* //version 1
+        let r1 =parseInt(prompt('veuillez saisire les valeurs de R1'))
+        let r2 =parseInt(prompt('veuillez saisire les valeurs de R2'))
+        let r3 =parseInt(prompt('veuillez saisire les valeurs de R3'))
+        let res=(r1+r2+r3)//resistance
+        let res2=(r1 * r2 *r3) / (r1*r2 + r2*r3 + r1*r3)
+        console.log('La résistance en paralléle est:',res2)
+    console.log('La résistance en serie est:',res)*/
+
+    //version 2
+    let r1 =parseInt(prompt('veuillez saisire les valeurs de R1'))
+        let r2 =parseInt(prompt('veuillez saisire les valeurs de R2'))
+        let r3 =parseInt(prompt('veuillez saisire les valeurs de R3'))
+        console.log('1-résistance en série')
+        console.log('2-résistance en parallèle')
+        let choix=parseInt(prompt('veuillez choissire un numéro'))
+        if(choix===1){
+            let res=(r1+r2+r3)
+            console.log('La résistance en serie est:',res)
+        }
+        else if(choix===2){
+        
+       
+            let res2=(r1 * r2 *r3) / (r1*r2 + r2*r3 + r1*r3)
+            console.log('La résistance en paralléle est:',res2) 
+        }
+        
+    </script>
+</body>c:\Users\simplon\AppData\Local\Temp\Rar$DRa8564.3825.rartemp\TD javascript1\exo19.htmlc:\Users\simplon\AppData\Local\Temp\Rar$DRa8564.3825.rartemp\TD javascript1\exo19.html
+</html>

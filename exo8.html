@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo8</title>
+</head>
+<body>
+    <script>
+        let a=parseInt(prompt('Entrez la valeure de a'))
+        let b=parseInt(prompt('Entrez la valeure de b'))
+        let c=parseInt(prompt('Entrez la valeure de c'))
+        let delta=b**2-4*a*c
+        if(delta<0){
+            console.log('impossible car delta négatif')
+        }
+        else if(delta===0){
+            let x= -b/2*a
+            console.log('le résultat est x=',x)
+        }
+        else if(delta>0){
+            let x1= (-b-Math.sqrt(delta))/2*a
+            let x2= (-b+Math.sqrt(delta))/2*a
+            console.log('les résultats sont:  x1=',x1,'et x2=',x2)
+        }
+    </script>
+</body>
+</html>

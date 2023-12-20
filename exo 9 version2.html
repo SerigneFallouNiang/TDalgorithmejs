@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 9 version2</title>
+</head>
+<body>
+    <script>
+  let hd=parseInt(prompt("Entrez l'heure de départ"))
+let md=parseInt(prompt("Entrez les minutes de départ"))
+let ha=parseInt(prompt("Entrez l'heure d'arrivée"))
+let ma=parseInt(prompt("Entrez les minutes  d'arrivée"))
+
+let duree= ((ha-hd)*60+(ma-md)+1440) % 1440
+
+let h=Math.trunc(duree/60)
+let m=duree%60
+console.log("La durée de votre tracé est de:",h,"h",m,"minutes")      
+    </script>
+</body>
+</html>

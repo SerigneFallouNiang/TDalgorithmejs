@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Fonction pour vérifier si un nombre est parfait
+function estNombreParfait(nombre) {
+    if (nombre <= 1) {
+        return false; // Les nombres inférieurs ou égaux à 1 ne sont pas parfaits
+    }
+
+    // Initialiser la somme des diviseurs
+    let sommeDiviseurs = 1; // On inclut toujours 1 comme diviseur
+
+    // Parcourir les diviseurs potentiels jusqu'à la racine carrée du nombre
+    for (let diviseur = 2; diviseur <= Math.sqrt(nombre); diviseur++) {
+        if (nombre % diviseur === 0) {
+            sommeDiviseurs += diviseur;
+            // Si le diviseur est différent de la racine carrée, ajouter aussi le diviseur complémentaire
+            if (diviseur !== Math.sqrt(nombre)) {
+                sommeDiviseurs += nombre / diviseur;
+            }
+        }
+    }
+
+    // Un nombre est parfait s'il est égal à la somme de ses diviseurs stricts
+    return sommeDiviseurs === nombre;
+}
+
+// Test de la fonction avec un exemple
+let nombreATester = 28;
+if (estNombreParfait(nombreATester)) {
+    console.log(nombreATester + " est un nombre parfait.");
+} else {
+    console.log(nombreATester + " n'est pas un nombre parfait.");
+}
+
+    </script>
+</body>
+</html>

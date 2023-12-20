@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 14</title>
+</head>
+<body>
+   <script>
+    let jour=parseFloat(prompt("Entrez le jour"))
+    let moi=parseFloat(prompt("Entrez le moi"))   
+    let annee=parseFloat(prompt("Entrez le annee"))        
+    function anneebissextil(jour,moi,annee){
+        if(jour>31|| jour<0){
+            return "jour invalide"
+        }
+        if(moi>12){
+            return"Moi invalide"}
+            if(annee%4==0 ){
+            return "L'annee  "+annee+"  est bissextil"
+    } 
+}  
+       let resultat= anneebissextil(jour,moi,annee)
+       console.log(resultat)
+       /* if(moi>12){
+            console.log("Moi invalide")}
+        
+        if(annee%4==0 ){
+            console.log("L'annee",annee,"est bissextil") ;}
+     else if(annee%100==0){
+            console.log("L'annee",annee,"est normale") ;  
+        }else{
+            console.log("L'annee",annee,"n'est pas bissextil")  
+        }
+        if(jour>31 && jour<0){
+            console.log("jour invalide")}*/
+   </script> 
+</body>
+</html>

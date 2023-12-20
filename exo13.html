@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 13</title>
+</head>
+<body>
+    <script>
+        let jour=parseFloat(prompt("Entrez le jour"))
+        let moi=parseFloat(prompt("Entrez le moi"))
+        let annee=parseFloat(prompt("Entrez le annee"))
+        function anneevalide(jour,moi,annee){
+            if(jour>31 || jour<0){
+                return"jour invalide"
+            } 
+            if(jour>28 && moi==2){
+                return "Le moi de février ne compte pas plus de 28 jours"
+            }
+            if(moi>12 || moi<0){
+                return"Moi invalide"
+            } 
+            if(annee<1000 || annee>2023){
+                return"annee invalide"
+            }else return"la date est:"+jour +"/"+moi+"/"+annee
+        }
+        let resultat=anneevalide(jour,moi,annee)
+        console.log(resultat)
+        /*if(jour>31 && jour<0){
+            console.log("jour invalide")
+    
+        }
+        
+        if(moi>12){
+            console.log("Moi invalide")}
+        
+        if(annee<1000 && annee>2023){
+            console.log("annee invalide") }
+        console.log("la date est:",jour,moi,annee)*/
+        
+    </script>
+</body>
+</html>
